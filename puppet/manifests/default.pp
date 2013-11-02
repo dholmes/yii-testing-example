@@ -424,6 +424,6 @@ if $php_values['composer'] == 1 {
     cwd => '/var/www',
     command => "php ${composer::target_dir}/composer install --no-plugins --no-scripts --no-interaction --dev",
     onlyif => 'test -f /var/www/composer.json'
-}
+  }
 }
 
