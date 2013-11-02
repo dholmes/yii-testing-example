@@ -1,3 +1,12 @@
 assets/
 protected/runtime/
+protected/assets
 themes/classic/views/
+/.vagrant
+/.vagrant/machines/default/virtualbox/id
+/tests
+/vendor
+/nbproject
+/protected/tests/log/*.html
+/protected/tests/log/reports/*
+
