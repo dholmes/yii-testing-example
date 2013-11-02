@@ -417,3 +417,13 @@ define mysql_db (
   }
 }
 
+if $php_values['composer'] == 1 {
+  exec { "run_composer_install":
+    path        => "/bin:/usr/bin/:/sbin:/usr/sbin:${composer::target_dir}",
+    environment => "COMPOSER_HOME=${composer::composer_home}",
+    cwd => '/var/www',
+    command => "php ${composer::target_dir}/composer install --no-plugins --no-scripts --no-interaction --dev",
+    onlyif => 'test -f /var/www/composer.json'
+}
+}
+
