@@ -9,4 +9,5 @@ themes/classic/views/
 /nbproject
 /protected/tests/log/*.html
 /protected/tests/log/reports/*
-
+/index.html
+/xhprof
