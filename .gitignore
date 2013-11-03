@@ -1,7 +1,6 @@
 assets/
 protected/runtime/
 protected/assets
-themes/classic/views/
 /.vagrant
 /.vagrant/machines/default/virtualbox/id
 /tests
