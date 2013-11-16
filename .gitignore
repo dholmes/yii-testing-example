@@ -6,7 +6,6 @@ protected/assets
 /tests
 /vendor
 /nbproject
-/protected/tests/log/*.html
-/protected/tests/log/reports/*
+protected/tests/log
 /index.html
 /xhprof
