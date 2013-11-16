@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+    backupGlobals="false"
+    backupStaticAttributes="false"
+    bootstrap="protected/tests/bootstrap.php"
+    colors="true">
+
+    <testsuite name="yii-tests">
+            <directory>protected/tests</directory>
+    </testsuite>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./library</directory>
+            <directory suffix=".php">./protected</directory>
+            <exclude>
+                <directory>./protected/tests</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+
+    <logging>
+        <log type="coverage-html"
+                target="protected/tests/log/report"
+            charset="UTF-8"
+            yui="true"
+            highlight="true"
+            lowUpperBound="40"
+            highLowerBound="70" />
+    <log type="testdox-html" target="protected/tests/log/testdox.html" />
+    </logging>
+
+</phpunit>
+
